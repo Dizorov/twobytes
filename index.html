@@ -10,7 +10,9 @@
 	<header class="page-header">
 		<div class="container">
 			<ul class="page-header__header-nav">
-				<li class="header-nav__logo"></li>
+				<li class="header-nav__logo">
+					<p class="logo">two<strong>bytes</strong></p>
+				</li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">home</a></li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">about us</a></li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">jobs</a></li>
@@ -18,18 +20,22 @@
 				<li class="header-nav__item"><a href="#" class="header-nav__link">employers</a></li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">contact us</a></li>
 			</ul>
+			<p class="search__heading">I'm looking for..</p>
 			<form class="header__search">
-				<p class="search__heading">I'm looking for..</p>
-				<input type="search" name="search__field" placeholder="Enter a Job Description">
-				<input type="button" name="search__button" value="Search">
-				<input id="fulltime" type="checkbox" name="">
-				<label for="fulltime">Full Time</label>
-				<input id="freelance" type="checkbox" name="">
-				<label for="freelance">Part Time / Casual / Freelance</label>
-				<select name="location">
-					<option value="your_location">Select Your Location</option>
-					<option value="Lorem">Lorem ipsum</option>
-				</select>
+				<div class="search__container_left">
+					<input type="search" name="search__field" placeholder="Enter a Job Description">
+					<input id="fulltime" type="checkbox" name="">
+					<label for="fulltime">Full Time</label>
+					<input id="freelance" type="checkbox" name="">
+					<label for="freelance">Part Time / Casual / Freelance</label>
+					<select name="location">
+						<option value="your_location">Select Your Location</option>
+						<option value="Lorem">Lorem ipsum</option>
+					</select>
+				</div>
+				<div class="search__container_right">
+					<button class="search__submit" type="submit" name="search__button" value="Search">Search</button>
+				</div>
 			</form>
 		</div>
 	</header>
