@@ -12,7 +12,7 @@
 		<div class="container">
 			<ul class="page-header__header-nav">
 				<li class="header-nav__logo">
-					<p class="logo">two<strong>bytes</strong></p>
+					<p class="logo">two<strong class="logo_bold">bytes</strong></p>
 				</li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">home</a></li>
 				<li class="header-nav__item"><a href="#" class="header-nav__link">about us</a></li>
@@ -49,26 +49,33 @@
 	<main class="">
 		<section class="intro">
 			<h2 class="for-sr">Intro</h2>
-			<p class="intro__heading">We're leaders in<br><span class="intro__heading_big">Creative Digital Recruitment</span></p>
+			<p class="intro__heading">We're leaders in</p>
+			<p class="intro__heading_big">Creative Digital Recruitment</p>
 			<div class="intro__shape"></div>
 			<p class="intro__advantage">Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity<br>and that reflects on the type of jobs we recruit for.</p>
-			<a href="#">FIND OUT MORE ABOUT US!</a>
+			<a class="intro__link" href="#">FIND OUT MORE ABOUT US!</a>
 		</section>
 		<section class="subscribe">
 			<h2 class="for-sr">Subscribe</h2>
-			<p>Subscribe to our Job Seeker Mailing List</p>
+			<p class="subscribe__slogan">Subscribe to our Job Seeker Mailing List</p>
 			<form action="#">
-				<input type="email" name="user_email" placeholder="Enter Your Email Address">
+				<div class="subscribe__field">
+					<input class="subscribe__input" type="email" name="user_email" placeholder="Enter Your Email Address">
+				</div>
 			</form>
 		</section>
 	</main>
 	<footer class="page-footer">
 		<p class="page-footer__mail">hello@twobytes.com.au</p>
-		<p class="copyright">Copyright &copy; 2014 Two Bytes Consulting. <span>Terms &amp; Policies.</span></p>
-		<ul class="page-footer__social">
-			<li class="social__item">twitter</li>
-			<li class="social__item">facebook</li>
-		</ul>
+		<div class="footer__container">
+			<p class="footer__copyright">Copyright &copy; 2014 Two Bytes Consulting. <span class="footer__copyright_bold">Terms &amp; Policies.</span></p>
+			<ul class="page-footer__social">
+				<li class="social__item"><a href="#" class="social__tweet">Tweet</a></li>
+				<li class="social__item"><div class="social__twitter-likes">692</div></li>
+				<li class="social__item"><a href="#" class="social__like">Like</a></li>
+				<li class="social__item"><div class="social__facebook-likes">117</div></li>
+			</ul>
+		</div>
 	</footer>
 </body>
 </html>
