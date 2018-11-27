@@ -433,30 +433,83 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 }
 
 .social__tweet {
-	padding: 4px 5px;
-	padding-left: 20px;
-	color: #186487;
-	font-family: "Helvetica Neue", sans-serif;
-	text-decoration: none;
-	text-shadow: 0 0 1px #fff;
-	font-weight: bold;
+	display: block;
+	position: relative;
+	width: 55px;
+	height: 20px;
 	border: 1px solid #99b9ce;
 	border-radius: 3px;
 	background-image: linear-gradient(0deg, #d5e6ef, #ffffff);
+}
+
+.social__tweet::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: 5px;
+	width: 13px;
+	height: 11px;
+	background-image: url("../img/icon_twitterbird.png");
+	background-repeat: no-repeat;
+}
+
+.social__tweet::after {
+	position: absolute;
+	content: "";
+	top: 5px;
+	right: 5px;
+	width: 31px;
+	height: 11px;
+	background-image: url("../img/Tweet.png");
+	background-repeat: no-repeat;
+}
+
+.social__like {
+	display: block;
+	position: relative;
+	width: 48px;
+	height: 20px;
+	background-color: #eceef5;
+	border: 1px solid #cad4e7;
+	border-radius: 3px;
+}
+
+.social__like::before {
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 5px;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/icon_facebook.png");
+	background-repeat: no-repeat;
+}
+
+.social__like::after {
+	position: absolute;
+	content: "";
+	top: 6px;
+	right: 5px;
+	width: 21px;
+	height: 8px;
+	background-image: url("../img/Like.png");
+	background-repeat: no-repeat;
 }
 
 .social__twitter-likes {
 	position: relative;
 	margin: 0 10px;
 	padding: 3px 5px;
+	color: #2a7090;
+	font-size: 12px;
 	background: #ffffff;
 	border: 1px solid #cee3f0;
 	border-radius: 3px;
 }
+
 .social__twitter-likes:after, .social__twitter-likes:before {
 	position: absolute;
 	content: " ";
@@ -474,6 +527,7 @@ body {
 	border-width: 6px;
 	margin-top: -6px;
 }
+
 .social__twitter-likes:before {
 	border-color: rgba(0, 0, 0, 0);
 	border-right-color: #cee3f0;
@@ -485,10 +539,13 @@ body {
 	position: relative;
 	margin: 0 10px;
 	padding: 3px 5px;
-	background: #ffffff;
+	color: #000000;
+	font-size: 12px;
+	background-color: #ffffff;
 	border: 1px solid #d1d1d1;
 	border-radius: 2px;
 }
+
 .social__facebook-likes:after, .social__facebook-likes:before {
 	position: absolute;
 	content: " ";
@@ -506,6 +563,7 @@ body {
 	border-width: 6px;
 	margin-top: -6px;
 }
+
 .social__facebook-likes:before {
 	border-color: rgba(0, 0, 0, 0);
 	border-right-color: #d1d1d1;
