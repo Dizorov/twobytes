@@ -63,7 +63,7 @@ body {
 	top: 35px;
 	left: 0;
 	font-size: 12px;
-	letter-spacing: 7px;
+	letter-spacing: 9px;
 }
 
 .header-nav__item {
@@ -107,6 +107,26 @@ body {
 
 .search__container_left {
 	width: 740px;
+}
+
+.search__field {
+	width: 100%;
+	padding: 14px 0 16px 20px;
+
+	font-size: 18px;
+	line-height: 25px;
+	font-style: italic;
+
+	background-color: #ffffff;
+
+	border: none;
+	border-radius: 2px;
+
+	box-shadow: inset 0 -4px 0 #e2e2e2;
+}
+
+.search__field::placeholder {
+	color: #c7c7c7;
 }
 
 .search__container_right {
