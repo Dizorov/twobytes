@@ -25,14 +25,20 @@
 			<form class="header__search">
 				<div class="search__container_left">
 					<input class="search__field" type="search" name="search__field" placeholder="Enter a Job Description">
-					<input id="fulltime" type="checkbox" name="">
-					<label for="fulltime">Full Time</label>
-					<input id="freelance" type="checkbox" name="">
-					<label for="freelance">Part Time / Casual / Freelance</label>
-					<select name="location">
-						<option value="your_location">Select Your Location</option>
-						<option value="Lorem">Lorem ipsum</option>
-					</select>
+					<div class="search__filters">
+						<div>
+							<input class="filters__checkbox" id="fulltime" type="checkbox" name="fulltime">
+							<label class="filters__label" for="fulltime">Full Time</label>
+						</div>
+						<div>
+							<input class="filters__checkbox" id="freelance" type="checkbox" name="freelance">
+							<label class="filters__label" for="freelance">Part Time / Casual / Freelance</label>
+						</div>
+						<select class="filters__selection" name="location">
+							<option class="filters__selection-option" value="your_location">Select Your Location</option>
+							<option class="filters__selection-option" value="Lorem">Lorem ipsum</option>
+						</select>
+					</div>
 				</div>
 				<div class="search__container_right">
 					<button class="search__submit" type="submit" name="search__button" value="Search">Search</button>
