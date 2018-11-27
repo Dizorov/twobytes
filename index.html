@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title></title>
+	<title>TwoBytes</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-	<header>
-		
+	<header class="page-header">
+		<ul class="page-header__header-nav">
+			<li class="header-nav__logo"></li>
+			<li class="header-nav__item">home</li>
+			<li class="header-nav__item">about us</li>
+			<li class="header-nav__item">jobs</li>
+			<li class="header-nav__item">clients</li>
+			<li class="header-nav__item">employers</li>
+			<li class="header-nav__item">contact us</li>
+		</ul>
+		<form class="header__search">
+			<p class="search__heading">I'm looking for..</p>
+			<input type="search" name="search__field" placeholder="Enter a Job Description">
+			<input type="button" name="search__button" value="Search">
+			<input id="fulltime" type="checkbox" name="">
+			<label for="fulltime">Full Time</label>
+			<input id="freelance" type="checkbox" name="">
+			<label for="freelance">Part Time / Casual / Freelance</label>
+			<select name="location">
+				<option value="your_location">Select Your Location</option>
+				<option value="Lorem">Lorem ipsum</option>
+			</select>
+		</form>
 	</header>
-
-	<main>
-		
+	<main class="container">
+		<section class="intro">
+			<h2 class="for-sr">Intro</h2>
+			<p class="intro__heading">We're leaders in<br><span class="intro__heading_big">Creative Digital Recruitment</span></p>
+			<div class="intro__shape"></div>
+			<p class="intro__advantage">Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity<br>and that reflects on the type of jobs we recruit for.</p>
+			<a href="#">FIND OUT MORE ABOUT US!</a>
+		</section>
+		<section class="subscribe">
+			<h2 class="for-sr">Subscribe</h2>
+			<p>Subscribe to our Job Seeker Mailing List</p>
+			<form action="#">
+				<input type="email" name="user_email" placeholder="Enter Your Email Address">
+			</form>
+		</section>
 	</main>
-
-	<footer>
-		
+	<footer class="page-footer">
+		<p class="page-footer__mail">hello@twobytes.com.au</p>
+		<p class="copyright">Copyright &copy; 2014 Two Bytes Consulting. <span>Terms &amp; Policies.</span></p>
+		<ul class="page-footer__social">
+			<li class="social__item">twitter</li>
+			<li class="social__item">facebook</li>
+		</ul>
 	</footer>
-
 </body>
 </html>
